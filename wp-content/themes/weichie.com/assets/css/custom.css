@@ -1,89 +1,56 @@
 /* ----------------------------------------------
 	This will overwrite the style.css
 ---------------------------------------------- */
-.colorN1{
-	background-color:#FFFFFF;
+/*media query*/
+@media (min-width: 1200px){
+	.container{
+		max-width: 100%;
+	}
 }
-.colorN2{
-	background-color:#DEE3EF;
+@media (min-width: 992px){
+	.container{
+		max-width: 100%;
+	}
 }
-.colorN3{
-	background-color:#000000;
+@media (min-width: 768px){
+	.container{
+		max-width: 100%;
+	}
 }
-.sepaA{padding-top: 150px;}
-.sepa{
-	width: 16px;
-	height: 8px;
-	background-color:#E38C20;
-	border-color:#E38C20;
-	border-radius: 4px;
-	margin: 16px auto 40px auto; 
+@media (min-width: 576px){
+	.container{
+		max-width: 100%;
+	}
 }
-.registerExpo{
-	color:#fff;
-	background: #E38C20 0% 0% no-repeat padding-box;
-	border-color:#E38C20;
-	border-radius: 4px;
-	margin: 0px auto !important; 
-	font-family: Poppins-SemiBold;
-	border-radius: 4px;
+
+/*police Wirte*/
+.textPM50{
+	font-family:Poppins-Medium;
+	font-size: 50px;
+}
+.textPR24{
+	font-family:Poppins-Regular;
+	font-size: 24px;
+}
+.textMM15{
+	font-family:Montserrat-Medium;
 	font-size: 15px;
+	color: #3C4043;
 }
-.registerExpo2 {
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-family: Poppins-SemiBold;
-	font-size: 15px;
-	margin: 0px auto !important;
-	border-radius: 4px;
-	cursor: pointer;
-	background-color: white;
-	color: black;
-	border: 1px solid #DEE3EF; /* Green */
-  }
-  .registerExpo3{
-	padding: 11px 28px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-family: Poppins-SemiBold;
-	color:#fff;
-	font-size: 15px;
-	margin: 0px auto !important; 
-	border-radius: 4px;
-	cursor: pointer;
-	background: #E38C20 0% 0% no-repeat padding-box;
-	border: 0px;
+.titleMM20{
+	font-family:Montserrat-Medium;
+	font-size: 20px;
 }
-.registerExpo:hover
-{
-	background-color: #E38C20;
-	border-color:#E38C20;
+.titleMM40{
+	font-family:Montserrat-Medium;
+	font-size: 40px;
 }
-.colorN5{
-	background-color:#EBEFF8;
+.titleMM50{
+	font-family:Montserrat-Medium;
+	font-size: 50px;
 }
-.colorN6{
-	background-color:#F6EEE3;
-}
-.colorN7{
-	background-color:#002382;
-}
-.colorN8{
-	background-color:#3C4043;
-}
-.colorN9{
-	background-color:#FFF8F0;
-	padding: 100px 0px;
-}
-.colorN10{
-	background-color:#D8D8D8;
-}
-.colorN11{
-	background-color:#EEEEEE;
-}
+
+/*images*/
 .hexagon {
 	position: relative;
 	-webkit-clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
@@ -139,6 +106,66 @@
 		top: -603px;
 		left: 212px;
 	}
+
+	/*bar Spare*/
+	.sepa{
+		width: 16px;
+		height: 8px;
+		background-color:#E38C20;
+		border-color:#E38C20;
+		border-radius: 4px;
+		margin: 16px auto 40px auto; 
+	}
+
+.sepaA{padding-top: 150px;}
+
+/*button*/
+
+.registerExpo{
+	color:#fff;
+	background: #E38C20 0% 0% no-repeat padding-box;
+	border-color:#E38C20;
+	border-radius: 4px;
+	margin: 0px auto !important; 
+	font-family: Poppins-SemiBold;
+	border-radius: 4px;
+	font-size: 15px;
+}
+.registerExpo2 {
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Poppins-SemiBold;
+	font-size: 15px;
+	margin: 0px auto !important;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	border: 1px solid #DEE3EF; /* Green */
+  }
+  .registerExpo3{
+	padding: 11px 28px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Poppins-SemiBold;
+	color:#fff;
+	font-size: 15px;
+	margin: 0px auto !important; 
+	border-radius: 4px;
+	cursor: pointer;
+	background: #E38C20 0% 0% no-repeat padding-box;
+	border: 0px;
+}
+.registerExpo:hover
+{
+	background-color: #E38C20;
+	border-color:#E38C20;
+}
+
+/*menu*/
 	.navP{
 		width: 100%;
 		height: 60px; 
@@ -176,6 +203,8 @@
 		border-bottom: 2px solid #E38C20;
 		padding-bottom: 2px;
 	  }
+
+	/*agenda*/
 	.cardA{
 	  	text-align: left;
 		letter-spacing: 0px;
@@ -194,6 +223,8 @@
 		top: 115px;
 		z-index: -1;
 	}
+
+	/*Accordeon*/
 	.containerB{
 		width: 60%;
 		min-width: 500px;
@@ -206,7 +237,6 @@
 		width: auto;
 		margin: 0 10px;
 		padding: 15px 40px;
-		/* box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2); */
 	}
 	.togglerB,.contentB{
 		font-family:Montserrat-Medium;	
@@ -258,7 +288,7 @@
 		display: table;
 	  }
 	  
-	  /* Create two equal columns that sits next to each other */
+	  /* Create two equal columns that sits next to each other For Accordeon*/
 	.columnB {
 		flex: 80%;
 		width: 80%;
@@ -270,59 +300,18 @@
 	.container{
 		padding: 0;
 	}
+	/* div of HomePage*/
 	#About{min-height: 660px;
 	padding-bottom: 160px;}
 	#Speakers{min-height: 680px;padding-top: 70px;}
 	#Agenda{min-height: 600px;padding-top: 70px;}
 	#Information{min-height: 760px;padding-top: 70px;}
 	#JoiningUs{min-height: 380px;padding-top: 70px;}
-	/* .sectionB {top: 60px;} */
 	.section{
 		width: 100%;
 		padding: 0 12px;
 	}
-	@media (min-width: 1200px){
-		.container{
-			max-width: 100%;
-		}
-	}
-	@media (min-width: 992px){
-		.container{
-			max-width: 100%;
-		}
-	}
-	@media (min-width: 768px){
-		.container{
-			max-width: 100%;
-		}
-	}
-	@media (min-width: 576px){
-		.container{
-			max-width: 100%;
-		}
-	}
-	.textPM50{
-		font-family:Poppins-Medium;
-		font-size: 50px;
-	}
-	.textPR24{
-		font-family:Poppins-Regular;
-		font-size: 24px;
-	}
-	.textMM15{
-		font-family:Montserrat-Medium;
-		font-size: 15px;
-		color: #3C4043;
-	}
-	.titleMM20{
-		font-family:Montserrat-Medium;
-		font-size: 20px;
-	}
-	.titleMM40{
-		font-family:Montserrat-Medium;
-		font-size: 40px;
-	}
-	.titleMM50{
-		font-family:Montserrat-Medium;
-		font-size: 50px;
-	}
+
+.colorN6{
+	background-color:#F6EEE3;
+}
