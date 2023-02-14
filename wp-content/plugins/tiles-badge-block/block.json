@@ -1,0 +1,52 @@
+{
+	"apiVersion": 2,
+	"name": "tiles/badge",
+	"title": "Badge",
+	"category": "design",
+	"description": "Add a badge to highlight content areas on your website.",
+        "keywords": [ "tiles", "badge", "notice", "cta" ],
+	"textdomain": "tiles-badge-block",
+        "attributes": {
+                "content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-tiles-badge__content"
+		},
+		"radius": {
+			"type": "number"
+		},
+		"borderWidth": {
+			"type": "number"
+		},
+		"padding": {
+			"type": "number"
+		},
+		"icon": {
+			"type": "number",
+			"default": 1
+		},
+		"contentJustification": {
+			"type": "string"
+		}
+	},
+        "supports": {
+		"html": false,
+		"color": {
+			"__experimentalSkipSerialization": true
+		},
+		"typography": {
+                        "fontSize": true
+                }
+	},
+	 "styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		},
+		{ "name": "tiles-badge-filled", "label": "Filled" }
+	],
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
